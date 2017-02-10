@@ -1,0 +1,10 @@
+--------------
+SELECT titre, resum
+FROM film
+WHERE (SELECT titre REGEXP '42') OR (SELECT resum REGEXP '42')
+ORDER BY duree_min
+--------------
+
+titre	resum
+1942, A Love Story	Over 20,000 films, Trailers and Clips, Showtimes and Tickets, Reviews, New Releases, Stars...
+42 H2G2	safdasffd  42

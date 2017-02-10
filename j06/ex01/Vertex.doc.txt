@@ -1,0 +1,25 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles 3D coordinates associated to a RGB color (Color class).
+
+An instance can be constructed from an array with at least 'x', 'y' and 'z' keys defined:
+new Vertex ( array('x' => 5, 'y' => 6, 'z' => 400));
+
+By default, the color is set to be white and homogeneous coordinate w is set to be 1.0.
+You can set them while construction this way:
+$color = new Color( array( 'rgb' => 12345 ) );
+new Vertex ( array('x' => 5, 'y' => 6, 'z' => 400, 'w' => 5.0, 'color' => $color));
+
+All the values are let as they are given by the user.
+
+The class provides the following methods :
+
+getX();
+Return the X coordinate.
+'X' can be replaced by any of 'Y', 'Z', 'W' or 'Color';
+
+setX( $int );
+Set the X coordinate to the given value.
+'X' can be replaced by any of 'Y', 'Z', 'W' or 'Color';
+When setting the color, an instance of Color class must be given.
+---------------------------------------------------------------------- Vertex ->

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<style>
+		#balloon
+		{
+			background-color: red;
+			border-radius: 100px;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div id="balloon" onclick="shuffle()" onmouseout='touch()'>
+	</div>
+	<script>
+	var size = 200;
+	var i = 0;
+	var tab = Array('red', 'green', 'blue');
+	var over = 0;
+	function shuffle() {
+		let balloon = document.getElementById("balloon");
+		if (size <= 410) {
+			size += 10;
+		}
+		else {
+			size = 200;
+		}
+		balloon.style.width= size + "px";
+		balloon.style.height= size + "px";
+		balloon.style.borderRadius= size/2 + "px";
+		if (over == 0)
+			i++;
+		else
+			i--;
+		if (i >= 3)
+			i = 0;
+		if (i < 0)
+			i = 2;
+		balloon.style.backgroundColor= tab[i];
+	}
+
+	function touch() {
+		let balloon = document.getElementById("balloon");
+		console.debug('error');
+		if (size >= 205) {
+			size -= 5;
+			balloon.style.width= size + "px";
+			balloon.style.height= size + "px";
+			balloon.style.borderRadius= size/2 + "px";
+		}
+		if (over == 0)
+			over = 1;
+		else
+			over = 0;
+	}
+	</script>
+</body>
+</html>

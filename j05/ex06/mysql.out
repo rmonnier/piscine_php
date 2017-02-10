@@ -1,0 +1,10 @@
+--------------
+SELECT titre, resum
+FROM film
+WHERE (SELECT resum REGEXP 'vincent'i)
+ORDER BY id_film
+--------------
+
+titre	resum
+Pulp Fiction	Vincent Vega and Jules Winnfield are two hitmen on the hunt for a briefcase whose contents were stolen from their boss, the much feared kingpin Marsellus Wallace. However, they run into a few unexpected and somewhat tricky detours along the
+Buffalo'66	An electric directorial debut (seven years in the making) by New York artist/musician/model/actor Vincent Gallo. He portrays troubled Billy Brown, who has just been let out of jail on a cold and miserable day.

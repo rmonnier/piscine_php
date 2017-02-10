@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+
+	</style>
+</head>
+<body>
+	<input id='number1' type='text' name='number1'>
+	<select id='operator' name='operator'>
+		<option value='plus'>+</options>
+		<option value='minus'>-</options>
+		<option value='mult'>*</options>
+		<option value='div'>/</options>
+		<option value='mod'>%</options>
+	</select>
+	<input id='number2' type='text' name='number2'>
+	<input id='submit' type='submit' name='submit' value='Try me!'>
+	<script>
+	function is_int(value){
+		if((parseFloat(value) == parseInt(value)) && !isNaN(value)){
+			return true;
+		}
+		else {
+			return false;
+		}
+}
+	setInterval( function(){ alert("Please, use me..."); }, 30000);
+	document.getElementById('submit').addEventListener('click', validateForm);
+	function validateForm() {
+		var x = document.getElementById('number1').value;
+		var y = document.getElementById('number2').value;
+		var op = document.getElementById('operator').value;
+		if (!is_int(x) || x < 0 || !is_int(y) || y < 0) {
+			alert("Error :(");
+			return false;
+		}
+		if (op === 'div' || op === 'mod')
+		{
+			if (y == 0)
+			{
+				alert("It’s over 9000!");
+				console.error("It’s over 9000!")
+				return false;
+			}
+		}
+		var result;
+		switch (op) {
+			case 'plus':
+				result = +x + +y;
+				break;
+			case 'minus':
+				result = x - y;
+				break;
+			case 'mult':
+				result = x * y;
+				break;
+			case 'div':
+				result = x / y;
+				break;
+			case 'mod':
+				result = x % y;
+				break;
+			default:
+				break;
+			}
+		alert(result);
+		console.log(result);
+		return true;
+	}
+	</script>
+</body>
+</html>

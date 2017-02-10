@@ -1,0 +1,76 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	background-color: #505050;
+}
+
+#general-wrapper
+{
+	width: 1750px;
+}
+
+header
+{
+	width: 1750px;
+	height: 160px;
+}
+
+#doft-img
+{
+	width: 550px;
+	height: 150px;
+}
+
+#wrapper-content
+{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+header, aside, section
+{
+	display: -webkit-flex;
+	display: flex;
+	background-color: #909090;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 25px;
+}
+
+
+aside
+{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	width: 170px;
+	height: 520px;
+}
+
+.img
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 90px;
+	height: 90px;
+}
+
+#brick
+{
+	background-image: url("resources/brick.jpg");
+	margin-bottom: auto;
+	width: 150px;
+	height: 90px;
+}

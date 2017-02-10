@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript</title>
+	</head>
+	<body>
+		<span onclick="alert('toto');" >Hello World</span>
+		<script>
+			var test;
+
+			test = 42;
+
+			var tab = new Array('tomate', 'salade', 'pomme de terre');
+			for (t in tab) {
+				console.log(tab[t]);			
+			}
+			console.debug(test);
+			function my_func() {
+				var toto;
+				toto = 'bonjour';
+				console.debug(toto);
+			}
+			my_func();
+		</script>
+	</body>
+</html>
+
+
+<!--
+
+var my_element = document.getElementById('h1');
+my_element.getAttribute('id');
+var new_element = document.createElement('span');
+new_element.setAttribute('style', background: red;');
+new_element.innerHTML('Hello world');
+my_element.appendChild(new_element);
+
+-->

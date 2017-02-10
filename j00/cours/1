@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Ceci est le titre de ma page</title>
+	<style>
+		h1
+		{
+			color: red;
+		}
+		#monimage
+		{
+			border: 5px solid red;
+		}
+		.maclass
+		{
+			color:green;
+		}
+	</style>
+</head>
+<body>
+	HOP <br/>
+
+	<h1>Chouette</h1><br/>
+	<h1>RE Chouette</h1><br/>
+
+	<img id="monimage" src="logo_42.jpg"><br/>
+
+	<a class="maclass" href="http://www.google.com">Ceci est un lien</a>
+
+</body>
+</html>
